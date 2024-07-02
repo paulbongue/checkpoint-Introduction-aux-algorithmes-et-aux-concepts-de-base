@@ -1,0 +1,23 @@
+Initialiser longueur à 0
+Initialiser nombre_de_mots à 0
+Initialiser nombre_de_voyelles à 0
+Initialiser est_dans_mot à faux
+
+Tant que le caractère actuel n'est pas '.':
+    Lire le caractère
+    Incrémenter longueur de 1
+    
+    Si le caractère est une voyelle ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'):
+        Incrémenter nombre_de_voyelles de 1
+    
+    Si le caractère est un espace:
+        Si est_dans_mot est vrai:
+            Incrémenter nombre_de_mots de 1
+            Mettre est_dans_mot à faux
+    Sinon:
+        Mettre est_dans_mot à vrai
+
+Si est_dans_mot est vrai:
+    Incrémenter nombre_de_mots de 1
+
+Afficher longueur, nombre_de_mots, nombre_de_voyelles
